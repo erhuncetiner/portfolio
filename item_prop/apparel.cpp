@@ -6,7 +6,7 @@ int d;
 apparel::apparel():items(c, d){
 	
 	value = weight * rarity;
-	details();
+//	details();
 	
 }
 

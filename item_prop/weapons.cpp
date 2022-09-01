@@ -15,7 +15,7 @@ weapons::weapons():items(a, b){
 //			weight = wei;
 //			rarity = rar;
 			value = weight * rarity;
-			details();
+//			details();
 }
 			
 

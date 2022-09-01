@@ -16,12 +16,14 @@ int main(int argv, char** argc){
 
 	mace basic(1, 0.71, 3, 15, 2);
 	sword knife(2, 0.96, 3, 4, 1);
-	shirt red(3, 1, 5, 5, 5);
+	shirt red(2, 1, 5, 5, 5);
 	plate_armor plate_01(2, 0.6, 15, 50, 2);
 	
+	basic.details();
+	knife.details();
+	red.details();
+	plate_01.details();
 	
-
-
 //	string selectionArmor;
 //	bool armSelection = 1;
 //	cout << "Which armor do you want to equip? Shirt or Plate? Type it in." << endl << endl;
