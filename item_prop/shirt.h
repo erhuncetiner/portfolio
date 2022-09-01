@@ -8,7 +8,7 @@
 class shirt : public apparel
 {
 	public:
-		shirt(int mat, double cond, double wght, int rar);
+		shirt(int mat, double cond, double armor, double wght, int rar);
 	
 };
 

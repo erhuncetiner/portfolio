@@ -7,43 +7,76 @@
 #include "mace.h"
 #include "shirt.h"
 #include "inventory.h"
+#include "duel.h"
+#include "plate_armor.h"
 
 using namespace std;
 
 int main(int argv, char** argc){
+
+	mace basic(1, 0.78, 3, 27, 2);
+	sword knife(2, 0.45, 3, 70, 1);
+	shirt red(3, 1, 5, 5, 5);
+	plate_armor plate_01(2, 0.6, 60, 30, 2);
 	
-	mace basic(1, 0.78, 5, 10, 2);
-	sword knife(2, 0.2, 3, 80, 1);
-	shirt red(3, 1, 10, 5);
 	
-//	basic.showInfo();
-	basic.details();
-//	knife.showInfo();
-	knife.details();
-//	red.showInfo();
-	red.details();
+
+
+//	string selectionArmor;
+//	bool armSelection = 1;
+//	cout << "Which armor do you want to equip? Shirt or Plate? Type it in." << endl << endl;
+//	while (armSelection == 1){
+//	
+//	getline(cin, selectionArmor);
+//	if (selectionArmor == "Shirt"){
+//		inventory equip_01("Erhun", red, basic);
+//		inventory equip_02("Bot", plate_01, knife);
+//		armSelection = 0;
+//		duel(equip_01, equip_02);
+//
+//	}
+//	
+//	else if (selectionArmor == "Plate"){
+//		inventory equip_01("Erhun", plate_01, knife);
+//		inventory equip_02("Bot", red, basic);
+//		armSelection = 0;
+////		duel(equip_01, equip_02);
+//	}
+//	else {
+//		armSelection = 1;
+//		cout << "Try again with the correct syntax of the weapon you want to equip." << endl << endl;
+//	}
+//	}
+
 	
-	string selection;
-	bool questionActive = 1;
+	string selectionWep;
+	bool wepSelection = 1;
 	cout << "Which weapon do you want to equip? Mace or Sword? Type it in." << endl << endl;
-	while (questionActive == 1){
+	while (wepSelection == 1){
 	
-	getline(cin, selection);
-	if (selection == "Mace"){
+	getline(cin, selectionWep);
+	if (selectionWep == "Mace"){
 		inventory equip_01("Erhun", red, basic);
-		questionActive = 0;
+		inventory equip_02("Bot", plate_01, knife);
+		wepSelection = 0;
+		duel(equip_01, equip_02);
 
 	}
 	
-	else if (selection == "Sword"){
-		inventory equip_01("Erhun", red, knife);
-		questionActive = 0;
+	else if (selectionWep == "Sword"){
+		inventory equip_01("Erhun", plate_01, knife);
+		inventory equip_02("Bot", red, basic);
+		wepSelection = 0;
+		duel(equip_01, equip_02);
 	}
 	else {
-		questionActive = 1;
+		wepSelection = 1;
 		cout << "Try again with the correct syntax of the weapon you want to equip." << endl << endl;
 	}
-}
+	}
+	
+	
+		
 	return 0;
 	
 }

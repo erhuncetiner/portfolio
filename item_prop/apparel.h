@@ -1,5 +1,7 @@
-#ifndef APPAREL_H
-#define APPAREL_H
+#include <conio.h>
+#include <iostream>
+
+#pragma once
 
 #include "items.h"
 
@@ -8,6 +10,7 @@ class apparel : public items
 	public:
 		int materialCode;
 		double condition; // 0 to 1
+		double armor;
 		string type, wear, material;
 		
 		apparel();
@@ -15,4 +18,4 @@ class apparel : public items
 		void details();
 };
 
-#endif
+

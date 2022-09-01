@@ -6,20 +6,21 @@ int d;
 apparel::apparel():items(c, d){
 	
 	value = weight * rarity;
+	details();
 	
 }
 
 void apparel::details(){
-	{if (materialCode == 1){ // Silk
-		material = "Silk";
+	{if (materialCode == 1){ // Iron
+		material = "Iron";
 	}
 	
-	else if (materialCode == 2){ // Linen
-		material = "Linen";
+	else if (materialCode == 2){ // Steel
+		material = "Steel";
 	}
 	
-	else if (materialCode == 3){ // Cotton
-		material = "Cotton";
+	else if (materialCode == 3){ // Bronze
+		material = "Bronze";
 	}}
 	{if (condition > 1){
 		cout << "Condition error!" << endl;
