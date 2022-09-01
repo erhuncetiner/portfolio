@@ -31,7 +31,7 @@ void weapons::details(){
 	}
 	
 	else if (condition >= 0.8){
-		string wear = "Factory New";
+		wear = "Factory New";
 	}
 	
 	else if (condition >= 0.6){

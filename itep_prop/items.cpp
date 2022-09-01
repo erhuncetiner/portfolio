@@ -17,7 +17,7 @@ void items::showInfo(){
 
 //void items::getValue(){
 	
-	cout << "This item is worth " << value << " golds." << endl;
+	cout << "This item is worth " << value << " gold." << endl;
 	
 //}
 
