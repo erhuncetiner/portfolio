@@ -4,9 +4,9 @@ CursorRow=4
 TopLine=1
 LeftChar=1
 [Editor_1]
-CursorCol=20
-CursorRow=69
-TopLine=43
+CursorCol=23
+CursorRow=17
+TopLine=6
 LeftChar=1
 [Editor_2]
 CursorCol=1
@@ -24,7 +24,7 @@ LeftChar=1
 [Editor_3]
 CursorCol=14
 CursorRow=18
-TopLine=4
+TopLine=32
 LeftChar=1
 [Editor_5]
 CursorCol=1
@@ -82,8 +82,8 @@ CursorRow=13
 TopLine=1
 LeftChar=1
 [Editor_16]
-CursorCol=83
-CursorRow=8
+CursorCol=81
+CursorRow=15
 TopLine=1
 LeftChar=1
 [Editor_17]

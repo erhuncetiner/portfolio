@@ -3,14 +3,17 @@
 string winner;
 duel::duel(inventory attacker, inventory defender){
 	attackerName = attacker.owner;
-	attackerHit = attacker.wep.damage * sqrt(attacker.wep.condition);
+	attackerHit = attacker.wep.damage * sqrt(attacker.wep.condition) - attacker.wep.weight * attacker.cloth_01.weight / 100;
 	attackerHP = 100;
-	attackerDeflect = attacker.cloth_01.armor * sqrt(attacker.cloth_01.condition)/100;
+	attackerDeflect = attacker.cloth_01.armor * sqrt(attacker.cloth_01.condition)/10;
+	cout << attackerName << " hits " << attackerHit << ". Deflects " << attackerDeflect << "." << endl << endl;
+
 	
 	defenderName = defender.owner;
-	defenderHit = defender.wep.damage * sqrt(defender.wep.condition);
+	defenderHit = defender.wep.damage * sqrt(defender.wep.condition) - defender.wep.weight * defender.cloth_01.weight / 100;
 	defenderHP = 100;
-	defenderDeflect = defender.cloth_01.armor * sqrt(defender.cloth_01.condition)/100;
+	defenderDeflect = defender.cloth_01.armor * sqrt(defender.cloth_01.condition)/10;
+	cout << defenderName << " hits " << defenderHit << ". Deflects " << defenderDeflect << "." << endl << endl;
 	battle();
 }
 
