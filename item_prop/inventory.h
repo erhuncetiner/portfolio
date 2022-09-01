@@ -19,6 +19,7 @@ class inventory
 		inventory(string owner, apparel default_0, weapons wep);
 		
 		void equipped();
+		void netWorth();
 	
 };
 
